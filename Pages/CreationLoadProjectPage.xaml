@@ -5,10 +5,16 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Diasoria.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="CreationLoadProjectPage" Background="Blue">
+      d:DesignHeight="350" d:DesignWidth="500"
+      Title="CreationLoadProjectPage" Background="White">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button Name="ButtonNewProject" Grid.Row="0" Content="Новый Проект" FontSize="23" MaxHeight="75" Width="200" Margin="0,0,0,-85" Click="ButtonNewProject_Click" />
+        <Button Name="ButtonLoadProject" Grid.Row="1" Content="Загрузить Проект" FontSize="23" MaxHeight="75" Width="200" Margin="0,0,0,85" IsEnabled="False"/>
     </Grid>
 </Page>

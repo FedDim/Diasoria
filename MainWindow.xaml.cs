@@ -11,6 +11,8 @@ namespace Diasoria
         public MainWindow()
         {
             InitializeComponent();
+            Left = (SystemParameters.PrimaryScreenWidth / 2) - (Width / 2);
+            Top = (SystemParameters.PrimaryScreenHeight / 2) - (Height / 2);
             MainFrame.Navigate(new CreationLoadProjectPage());
         }
     }

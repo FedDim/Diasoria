@@ -11,5 +11,10 @@ namespace Diasoria.Pages
         {
             InitializeComponent();
         }
+
+        private void ButtonNewProject_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ProjectEditorPage());
+        }
     }
 }
