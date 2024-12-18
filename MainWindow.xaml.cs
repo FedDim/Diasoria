@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Diasoria.Pages;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Diasoria
 {
@@ -23,6 +11,9 @@ namespace Diasoria
         public MainWindow()
         {
             InitializeComponent();
+            Left = (SystemParameters.PrimaryScreenWidth / 2) - (Width / 2);
+            Top = (SystemParameters.PrimaryScreenHeight / 2) - (Height / 2);
+            MainFrame.Navigate(new CreationLoadProjectPage());
         }
     }
 }
