@@ -9,6 +9,23 @@
       Title="ProjectEditorPage" Background="GhostWhite">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <TextBlock x:Name="ProjectName" 
+                     Text="Новый Проект" 
+                     FontSize="20" 
+                     VerticalAlignment="Center"
+                     Margin="10, 0, 10, 0"/>
+            <Button x:Name="ButtonEventAdd" Content="Добавить Событие" Margin="20, 0, 10, 0"/>
+            <Button x:Name="ButtonRelationAdd" Content="Добавить Связь" Margin="10, 0, 10, 0"/>
+
+        </StackPanel>
+        <Canvas Grid.Row="1">
+            
+        </Canvas>
     </Grid>
 </Page>
