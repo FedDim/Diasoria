@@ -11,5 +11,10 @@ namespace Diasoria.Pages
         {
             InitializeComponent();
         }
+
+        private void ProjectName_IsEnabledChanged(object sender, System.Windows.DependencyPropertyChangedEventArgs e)
+        {
+
+        }
     }
 }
